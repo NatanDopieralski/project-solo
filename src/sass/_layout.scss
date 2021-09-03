@@ -1,0 +1,74 @@
+/*GLOBAL*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+#pages {
+    > * {
+      display: none;
+    }
+
+    > .active {
+      display: block;
+    }
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+body {
+    margin: 0;
+    background: $background-color;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $brand-font;
+    color: #2c2c54;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    text-align: center center;
+}
+
+.top-bar-main-section-wrapper {
+    background-color: $background-color;
+    margin-left: 16.666667%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*SIDEBAR*/
+.sidebar {
+    background-color: $paragraph-color;
+    padding-right: 0;
+    padding-left: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+}
+
+/*TOP BAR*/
+.top-bar {
+    justify-content: flex-end;
+    height: $top-bar-height;
+    width: 100%;
+    position: fixed;
+    background-color: $color-white;
+    border-bottom: $border-line;
+    z-index: 2;
+
+    .top-bar--wrapper {
+        justify-content: flex-end;
+        padding-right: 16.566666%;
+    }
+}
+
+/*MAIN SECTION*/
+.main-section {
+    width: 100%;
+    padding-top: 60px;
+    z-index: 1;
+}

@@ -1,0 +1,92 @@
+.top-bar--price-wrapper {
+    border-left: $border-line;
+    border-right: $border-line;
+    max-height: $top-bar-height;
+    padding: 0 $top-bar-horizontal-padding 0 $top-bar-horizontal-padding;
+    cursor: pointer;
+
+    .top-bar--price {
+        font-size: $paragraph-font-size;
+        font-weight: $weight-font;
+        color: $font-color;
+        padding: 15px;
+        font-weight: 700;
+    }
+
+    .login-arrow {
+        margin-top: 22px;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.top-bar--price-wrapper:hover {
+    background-color: $background-color;
+    border-bottom: $border-line;
+}
+
+.top-bar--notification-wrapper {
+    max-height: $top-bar-height;
+    padding: 15px $top-bar-horizontal-padding 15px $top-bar-horizontal-padding;
+    cursor: pointer;
+
+    img {
+        position: absolute;
+        margin-top: 5px;
+    }
+}
+
+.top-bar--notification-wrapper::after {
+    position: relative;
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: $button-color;
+    display: block;
+    border-radius: 50%;
+    margin: 5px 0 0 10px;
+}
+
+.top-bar--notification-wrapper:hover {
+    background-color: $background-color;
+    border-bottom: $border-line;
+}
+
+.top-bar--login-wrapper {
+    padding: 0 $top-bar-horizontal-padding 0 $top-bar-horizontal-padding;
+    max-height: $top-bar-height;
+    border-left: $border-line;
+    border-right: $border-line;
+    cursor: pointer;
+
+    .top-bar--login {
+        padding: 15px 15px 0 15px;
+        font-size: $paragraph-font-size;
+        color: $login-color;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+}
+
+.top-bar--login-wrapper:hover {
+    background-color: $background-color;
+    border-bottom: $border-line;
+}
+
+.top-bar--exit {
+    border-right: $border-line;
+    max-height: $top-bar-height;
+    padding: 15px $top-bar-horizontal-padding 15px $top-bar-horizontal-padding;
+    cursor: pointer;
+
+    img {
+        margin-top: 5px;
+    }
+}
+
+.top-bar--exit:hover {
+    background-color: $background-color;
+    border-bottom: $border-line;
+}

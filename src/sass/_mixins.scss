@@ -1,0 +1,26 @@
+.small-icon {
+    filter: invert(76%) sepia(0%) saturate(4930%) hue-rotate(64deg) brightness(104%) contrast(82%);
+    width: 16px;
+    height: 16px;
+    margin-top: 15px;
+}
+
+.medium-icon {
+    filter: invert(76%) sepia(0%) saturate(4930%) hue-rotate(64deg) brightness(104%) contrast(82%);
+    width: 18px;
+    height: 18px;
+    margin-top: 18px;
+}
+
+.links-button {
+    background-color: $button-color;
+    cursor: pointer;
+    border: none;
+    border-radius: $border-radius;
+    color: $color-white;
+    text-align: center;
+    text-decoration: none;
+    font-size: $paragraph-font-size;
+    padding: 15px;
+    margin: 2%;
+}

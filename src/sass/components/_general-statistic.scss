@@ -1,0 +1,136 @@
+.general-statistic--title {
+    border-bottom: $border-line;
+    font-size: $paragraph-font;
+    font-weight: $weight-font;
+    color: $font-color;
+    padding: 10px;
+    height: 50px;
+
+    p {
+        max-height: 50px;
+        margin: 0 auto;
+    }
+}
+
+.general-statistic--date-wrapper {
+    border-bottom: $border-line;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+
+    .general-statistic--date {
+        max-height: 45px;
+        border: $border-line;
+        border-radius: 3%;
+        padding: 10px;
+
+        .general-statistic--date-left {
+            justify-content: flex-start;
+            border-right: $border-line;
+            padding: 0 0 0 5px;
+        }
+
+        .general-statistic--date-right-wrapper {
+            padding: 0;
+
+            .general-statistic--date-right {
+                padding: 0 0 0 15px;
+            }
+
+            img {
+                filter: invert(76%) sepia(0%) saturate(4930%) hue-rotate(64deg) brightness(104%) contrast(82%);
+                width: 16px;
+                height: 16px;
+                margin-top: 5px;
+                padding: 0;
+            }
+        }
+    }
+
+    .icon-refresh {
+        filter: invert(100%) sepia(56%) saturate(992%) hue-rotate(194deg) brightness(108%) contrast(109%);
+        background-color: $button-color;
+        border-radius: $border-radius;
+        display: inline-block;
+        color: $color-white;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+.general-statistic--four-box-wrapper {
+    justify-content: center;
+    margin: 20px 8% 20px 8%;
+
+    .general-statistic--four-box {
+        justify-content: space-between;
+        border-bottom: $border-line;
+        margin: 0 1% 0 1%;
+        padding: 2% 0 1% 0;
+
+        .general-statistic--four-box-title {
+            font-weight: $weight-font;
+            color: $font-color;
+        }
+    }
+}
+
+.general-statistic--earnings-chart {
+    font-size: $paragraph-font;
+    font-weight: $weight-font;
+    color: $font-color;
+    margin: 5% 0 2% 0;
+    padding: 0 0 0 15.5%;
+    height: 50px;
+}
+
+.general-statistic--three-box-wrapper {
+    justify-content: space-between;
+    margin-bottom: 3%;
+    cursor: pointer;
+    padding: 0;
+
+    .general-statistic--three-box {
+        justify-content: center;
+        border-radius: $border-radius;
+        padding: 0 5px 0 5px;
+    }
+
+    .general-statistic--three-box:hover {
+        background-color: $background-color;
+    }
+
+    p {
+        font-size: $paragraph-font;
+        color: #56819f;
+        padding: 0;
+    }
+
+    i {
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        margin: 20px 20px 20px 0;
+    }
+
+    .icon-signups {
+        background-color: #80bfca;
+    }
+
+    .icon-ftd {
+        background-color: #ff9a38;
+    }
+
+    .icon-earned {
+        background-color: #59b66d;
+    }
+}
+
+.general-statistic--chart-wrapper {
+    background-color: $background-color; // test !!!!!!!!!!!
+}

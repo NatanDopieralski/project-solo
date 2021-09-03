@@ -1,0 +1,94 @@
+.sidebar--logo {
+    color: $color-white;
+    height: 60px;
+
+    h1 {
+        padding-left: 8%;
+        font-size: 20px;
+        font-family: "Sacramento", cursive;
+    }
+
+    svg {
+        max-width: 60px;
+        max-height: 60px;
+        margin: 0 auto;
+        filter: invert(76%) sepia(0%) saturate(4930%) hue-rotate(64deg) brightness(104%) contrast(82%);
+    }
+}
+
+.sidebar--list {
+    line-height: 3;
+    padding: 0;
+    margin: 5% 0 10% 0;
+    border-bottom: $border-line;
+
+    .sidebar--list-element-wrapper {
+        list-style-type: none;
+        display: inline-block;
+        cursor: pointer;
+        width: 100%;
+
+        .sidebar--list-element {
+            padding-left: 8%;
+
+            a {
+                text-decoration: none;
+                color: $font-color;
+                font-size: 16px;
+                padding-left: 5%;
+            }
+        }
+    }
+
+    .sidebar--list-element-wrapper:hover {
+        background-color: $hover-color;
+
+    }
+
+    .sidebar--list-element-wrapper:hover::before {
+        content: '';
+        display: block;
+        background-color: $button-color;
+        width: 2%;
+        height: 50px;
+        float: left;
+    }
+}
+
+.sidebar--contacts {
+    color: $font-color;
+    font-size: 16px;
+    padding-left: 8%;
+
+    .sidebar--contacts-login{
+        padding-left: 15px;
+    }
+
+    .sidebar--contacts-wrapper {
+        cursor: pointer;
+    }
+
+    .sidebar--contacts-img-wrapper {
+        padding-top: 10px;
+        max-width: 40px;
+
+        img {
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    .sidebar--contacts-img-wrapper::after {
+        position: relative;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: $active-color;
+        display: block;
+        border-radius: 50%;
+        margin-left: 30px;
+    }
+}
