@@ -72,12 +72,21 @@ const app = {
 
   },
 
+  menuControl: function(){
+    document.querySelector(select.nav.haburger).addEventListener('click', function(event) {
+      event.preventDefault();
+      document.querySelector(select.containerOf.menu).classList.toggle(classNames.nav.active);
+    });
+
+  },
+
   init: function(){
     const thisApp = this;
 
     thisApp.initPages();
     thisApp.initGeneral();
     thisApp.initLinks();
+    thisApp.menuControl();
   },
 };
 

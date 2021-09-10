@@ -41,6 +41,10 @@
             color: $login-color;
         }
 
+        a:hover {
+            color: $button-color;
+        }
+
         img {
             align-items: center;
             cursor: pointer;

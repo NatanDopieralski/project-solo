@@ -6,12 +6,11 @@
 
 /* Components */
 //@import "components/form_field";
-@import "components/sidebar";
-@import "components/main-section";
-@import "components/top-bar";
+@import "sections/sidebar";
+@import "sections/main-section";
+@import "sections/top-bar";
 
 /* Sections */
-//@import "section/registration_form";
 @import "components/general-statistic";
 @import "components/links";
 

@@ -12,66 +12,68 @@
   <body>
       <section class="sidebar col-2">
         <div class="sidebar--logo">
-          <div class="row">
-            <h1 class="col-7">Just do it</h1>
-            <svg viewBox="0 0 100 80" class="col-5" focusable="#s">
+          <div class="row justify-content-between">
+            <h1 class="col-8">Just do it!</h1>
+            <svg viewBox="0 0 100 80" class="col-5 hamburger" focusable="#s">
               <rect width="70" height="8"></rect>
               <rect y="25" width="70" height="8"></rect>
               <rect y="50" width="70" height="8"></rect>
             </svg>
           </div>
         </div>
-        <ul class="col sidebar--list">
-          <li class="sidebar--list-element-wrapper">
-            <div class="row sidebar--list-element">
-              <img src="images/icons/general.svg" alt="#" class="small-icon">
-              <a href="#general" class="nav-link">General</a>
+        <div class="sidebar-menu">
+          <ul class="col sidebar--list menu">
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/general.svg" alt="#" class="small-icon">
+                <a href="#general" class="nav-link">General</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/details.svg" alt="#" class="small-icon">
+                <a href="#details" class="nav-link">Details</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/links.svg" alt="#" class="small-icon">
+                <a href="#links" class="nav-link">Links</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/banners.svg" alt="#" class="small-icon">
+                <a href="#banners" class="nav-link">Banners</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/personaldata.svg" alt="#" class="small-icon">
+                <a href="#personal-data" class="nav-link">Personal data</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/payout.svg" alt="#" class="small-icon">
+                <a href="#payout" class="nav-link">Payout</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/postback.svg" alt="#" class="small-icon">
+                <a href="#postback" class="nav-link">Postback</a>
+              </div>
+            </li>
+          </ul>
+          <div class="sidebar--contacts">
+            <p>YOUR MANAGER</p>
+            <div class="row sidebar--contacts-wrapper">
+              <div class="sidebar--contacts-img-wrapper">
+                <img src="images/sidebar/contact.png" alt="#">
+              </div>
+              <p class="sidebar--contacts-login">Mikhael E.</p>
             </div>
-          </li>
-          <li class="sidebar--list-element-wrapper">
-            <div class="row sidebar--list-element">
-              <img src="images/icons/details.svg" alt="#" class="small-icon">
-              <a href="#details" class="nav-link">Details</a>
-            </div>
-          </li>
-          <li class="sidebar--list-element-wrapper">
-            <div class="row sidebar--list-element">
-              <img src="images/icons/links.svg" alt="#" class="small-icon">
-              <a href="#links" class="nav-link">Links</a>
-            </div>
-          </li>
-          <li class="sidebar--list-element-wrapper">
-            <div class="row sidebar--list-element">
-              <img src="images/icons/banners.svg" alt="#" class="small-icon">
-              <a href="#banners" class="nav-link">Banners</a>
-            </div>
-          </li>
-          <li class="sidebar--list-element-wrapper">
-            <div class="row sidebar--list-element">
-              <img src="images/icons/personaldata.svg" alt="#" class="small-icon">
-              <a href="#personal-data" class="nav-link">Personal data</a>
-            </div>
-          </li>
-          <li class="sidebar--list-element-wrapper">
-            <div class="row sidebar--list-element">
-              <img src="images/icons/payout.svg" alt="#" class="small-icon">
-              <a href="#payout" class="nav-link">Payout</a>
-            </div>
-          </li>
-          <li class="sidebar--list-element-wrapper">
-            <div class="row sidebar--list-element">
-              <img src="images/icons/postback.svg" alt="#" class="small-icon">
-              <a href="#postback" class="nav-link">Postback</a>
-            </div>
-          </li>
-        </ul>
-        <div class="sidebar--contacts">
-          <p>YOUR MANAGER</p>
-          <div class="row sidebar--contacts-wrapper">
-            <div class="sidebar--contacts-img-wrapper">
-              <img src="images/sidebar/contact.png" alt="#">
-            </div>
-            <p class="sidebar--contacts-login">Mikhael E.</p>
           </div>
         </div>
       </section>
@@ -194,7 +196,9 @@
                 <img class="col-2" src="images/icons/calendar.svg" alt="#">
               </div>
             </div>
-            <img src="images/icons/refresh.svg" alt="#" class="icon-refresh">
+            <div class="general-statistic--icon-refresh-wrapper">
+              <img src="images/icons/refresh.svg" alt="#" class="general-statistic--icon-refresh">
+            </div>
           </div>
           <div class="row general-statistic--four-box-wrapper">
             <div class="row col-4 general-statistic--four-box">
@@ -214,22 +218,8 @@
               <div class="">432</div>
             </div>
             <div class="col-12 general-statistic--earnings-chart">Earnings chart</div>
-            <div class="row col-6 general-statistic--three-box-wrapper">
-              <div class="row col-3 general-statistic--three-box">
-                <i class="icon-signups"></i>
-                <p>Signups</p>
-              </div>
-              <div class="row col-3 general-statistic--three-box">
-                <i class="icon-ftd"></i>
-                <p>FTD</p>
-              </div>
-              <div class="row col-3 general-statistic--three-box">
-                <i class="icon-earned"></i>
-                <p>Earned</p>
-              </div>
-            </div>
             <div class="col-12 general-statistic--chart-wrapper">
-
+              <canvas id="myChart"></canvas>
             </div>
           </div>
         </div>
@@ -308,13 +298,8 @@
         </div>
       </script>
 
-
-
-
-
-
-
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
       <script src="js/script.js" type="module"></script>
   </body>
 </html>

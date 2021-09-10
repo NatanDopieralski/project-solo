@@ -39,6 +39,7 @@
 
             img {
                 filter: invert(76%) sepia(0%) saturate(4930%) hue-rotate(64deg) brightness(104%) contrast(82%);
+                cursor: pointer;
                 width: 16px;
                 height: 16px;
                 margin-top: 5px;
@@ -47,17 +48,31 @@
         }
     }
 
-    .icon-refresh {
-        filter: invert(100%) sepia(56%) saturate(992%) hue-rotate(194deg) brightness(108%) contrast(109%);
+    .general-statistic--icon-refresh-wrapper {
         background-color: $button-color;
         border-radius: $border-radius;
-        display: inline-block;
-        color: $color-white;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-        margin: 5px;
+        border: solid 1px $color-white;
+        max-width: 50px;
+        max-height: 50px;
+        margin: 4px;
+
+        .general-statistic--icon-refresh {
+            filter: invert(100%) sepia(56%) saturate(992%) hue-rotate(194deg) brightness(108%) contrast(109%);
+            display: inline-block;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            padding: 10px 10px 10px 7px;
+        }
+
+        .general-statistic--icon-refresh:active {
+            filter: invert(70%) sepia(75%) saturate(3657%) hue-rotate(346deg) brightness(98%) contrast(96%);
+        }
+    }
+
+    .general-statistic--icon-refresh-wrapper:active {
+        background-color: $color-white;
+        border: $border-line;
     }
 }
 
@@ -132,5 +147,5 @@
 }
 
 .general-statistic--chart-wrapper {
-    background-color: $background-color; // test !!!!!!!!!!!
+    margin: 0 15% 3% 15%;
 }

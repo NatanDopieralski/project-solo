@@ -7,8 +7,10 @@ export const select = {
     pages: '#pages',
     general: '.general-wrapper',
     links: '.links-wrapper',
+    menu: '.sidebar-menu',
   },
   nav: {
+    haburger: '.hamburger',
     links: '.nav-link',
   },
 };

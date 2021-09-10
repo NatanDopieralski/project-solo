@@ -9,10 +9,15 @@
     }
 
     svg {
-        max-width: 60px;
-        max-height: 60px;
-        margin: 0 auto;
+        padding: 0;
+        margin: 20px 15px 0 0;
+        max-width: 28px;
+        height: 28px;
         filter: invert(76%) sepia(0%) saturate(4930%) hue-rotate(64deg) brightness(104%) contrast(82%);
+    }
+
+    svg:hover {
+        filter: invert(70%) sepia(75%) saturate(3657%) hue-rotate(346deg) brightness(98%) contrast(96%);
     }
 }
 
@@ -65,6 +70,7 @@
     }
 
     .sidebar--contacts-wrapper {
+        margin-bottom: 3%;
         cursor: pointer;
     }
 
