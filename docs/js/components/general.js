@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import {templates} from 'js/settings.js';
+import {templates} from '../js/settings.js';
 
 class General {
   constructor(element){
