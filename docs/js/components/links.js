@@ -1,4 +1,4 @@
-import {templates} from './js/settings.js';
+import {templates} from '../js/settings.js';
 
 class Links {
   constructor(element){
