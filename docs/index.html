@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project-solo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700">
+    <link rel="stylesheet" href="/vendor/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <section class="sidebar col-2">
+        <div class="sidebar--logo">
+          <div class="row justify-content-between">
+            <h1 class="col-8">Just do it!</h1>
+            <svg viewBox="0 0 100 80" class="col-5 hamburger" focusable="#s">
+              <rect width="70" height="8"></rect>
+              <rect y="25" width="70" height="8"></rect>
+              <rect y="50" width="70" height="8"></rect>
+            </svg>
+          </div>
+        </div>
+        <div class="sidebar-menu">
+          <ul class="col sidebar--list menu">
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/general.svg" alt="#" class="small-icon">
+                <a href="#general" class="nav-link stretched-link">General</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/details.svg" alt="#" class="small-icon">
+                <a href="#details" class="nav-link">Details</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/links.svg" alt="#" class="small-icon">
+                <a href="#links" class="nav-link">Links</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/banners.svg" alt="#" class="small-icon">
+                <a href="#banners" class="nav-link">Banners</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/personaldata.svg" alt="#" class="small-icon">
+                <a href="#personal-data" class="nav-link">Personal data</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/payout.svg" alt="#" class="small-icon">
+                <a href="#payout" class="nav-link">Payout</a>
+              </div>
+            </li>
+            <li class="sidebar--list-element-wrapper">
+              <div class="row sidebar--list-element">
+                <img src="images/icons/postback.svg" alt="#" class="small-icon">
+                <a href="#postback" class="nav-link">Postback</a>
+              </div>
+            </li>
+          </ul>
+          <div class="sidebar--contacts">
+            <p>YOUR MANAGER</p>
+            <div class="row sidebar--contacts-wrapper">
+              <div class="sidebar--contacts-img-wrapper">
+                <img src="images/sidebar/contact.png" alt="#">
+              </div>
+              <p class="sidebar--contacts-login">Mikhael E.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="col top-bar-main-section-wrapper col-10">
+        <section class="top-bar">
+          <div class="row top-bar--wrapper">
+            <div class="row top-bar--price-wrapper">
+              <img src="images/icons/wallet.svg" alt="#" class="medium-icon">
+              <div class="top-bar--price">$1,500.00</div>
+              <img src="images/icons/arrow-down-small.svg" alt="#" class="medium-icon login-arrow">
+            </div>
+            <div class="top-bar--notification-wrapper">
+              <img src="images/icons/notification.svg" alt="#" class="medium-icon">
+            </div>
+            <div class="row top-bar--login-wrapper">
+              <img src="images/icons/profile.svg" alt="#" class="medium-icon">
+              <div class="top-bar--login">Leonardo Dicaprio</div>
+            </div>
+            <div class="top-bar--exit">
+              <img src="images/icons/quit.svg" alt="#" class="medium-icon">
+            </div>
+          </div>
+        </section>
+        <div id="pages">
+          <section id="general">
+            <div class="general-wrapper main-section col"></div>
+          </section>
+          <section id="links">
+            <div class="links-wrapper main-section col"></div>
+          </section>
+        </div>
+      </div>
+
+      <script id="template-links" type="text/x-handlebars-template">
+        <div class="col links">
+          <div class="col-12 links--title">
+            <p>LINKS</p>
+          </div>
+          <div class="col-12 links--button-wrapper">
+            <button type="button" class="links-button">+ add new</button>
+          </div>
+          <ul class="col col-12 links-list-wrapper">
+            <li class="row links-list">
+              <p class="col-5">Home Page</p>
+              <a href="#" class="col-5">https://www.homepage.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Currently Offer</p>
+              <a href="#" class="col-5">https://www.currently.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Blurpix</p>
+              <a href="#" class="col-5">https://www.blurpix.com</a>
+                <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+                <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Your Site</p>
+              <a href="#" class="col-5">https://www.yoursite.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Google</p>
+              <a href="#" class="col-5">https://www.google.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Facebook</p>
+              <a href="#" class="col-5">https://www.facebook.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Dashboard</p>
+              <a href="#" class="col-5">https://www.dashboard.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Blurax</p>
+              <a href="#" class="col-5">https://www.blurax.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Piece of Wine</p>
+              <a href="#" class="col-5">https://www.pieceofwine.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Twitter</p>
+              <a href="#" class="col-5">https://www.twitter.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+          </ul>
+          <div class="col-12 links--button-wrapper">
+            <button type="button" class="links-button">+ add new</button>
+          </div>
+        </div>
+      </script>
+
+      <script id="template-general" type="text/x-handlebars-template">
+        <div class="col general-statistic">
+          <div class="general-statistic--title">
+            <p>GENERAL STATISTIC</p>
+          </div>
+          <div class="row col-12 general-statistic--date-wrapper">
+            <div class="row col-3 general-statistic--date">
+              <div class="col-5 general-statistic--date-left">16.05.2016</div>
+              <div class="col-7 row general-statistic--date-right-wrapper">
+                <div class="col-10 general-statistic--date-right">16.05.2016</div>
+                <img class="col-2" src="images/icons/calendar.svg" alt="#">
+              </div>
+            </div>
+            <div class="general-statistic--icon-refresh-wrapper">
+              <img src="images/icons/refresh.svg" alt="#" class="general-statistic--icon-refresh">
+            </div>
+          </div>
+          <div class="row general-statistic--four-box-wrapper">
+            <div class="row col-4 general-statistic--four-box">
+              <div class="general-statistic--four-box-title">Visit Signups</div>
+              <div class="">124</div>
+            </div>
+            <div class="row col-4 general-statistic--four-box">
+              <div class="general-statistic--four-box-title">Net deposit</div>
+              <div class="">564</div>
+            </div>
+            <div class="row col-4 general-statistic--four-box">
+              <div class="general-statistic--four-box-title">FDT</div>
+              <div class="">445</div>
+            </div>
+            <div class="row col-4 general-statistic--four-box">
+              <div class="general-statistic--four-box-title">Turn over</div>
+              <div class="">432</div>
+            </div>
+            <div class="col-12 general-statistic--earnings-chart">Earnings chart</div>
+            <div class="col-12 general-statistic--chart-wrapper">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col links">
+          <div class="col-12 links--title">
+            <p>LINKS</p>
+          </div>
+          <div class="col-12 links--button-wrapper">
+            <button type="button" class="links-button">+ add new</button>
+          </div>
+          <ul class="col col-12 links-list-wrapper">
+            <li class="row links-list">
+              <p class="col-5">Home Page</p>
+              <a href="#" class="col-5">https://www.homepage.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Currently Offer</p>
+              <a href="#" class="col-5">https://www.currently.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Blurpix</p>
+              <a href="#" class="col-5">https://www.blurpix.com</a>
+                <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+                <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Your Site</p>
+              <a href="#" class="col-5">https://www.yoursite.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Google</p>
+              <a href="#" class="col-5">https://www.google.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Facebook</p>
+              <a href="#" class="col-5">https://www.facebook.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Dashboard</p>
+              <a href="#" class="col-5">https://www.dashboard.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Blurax</p>
+              <a href="#" class="col-5">https://www.blurax.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Piece of Wine</p>
+              <a href="#" class="col-5">https://www.pieceofwine.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+            <li class="row links-list">
+              <p class="col-5">Twitter</p>
+              <a href="#" class="col-5">https://www.twitter.com</a>
+              <img src="images/icons/links.svg" alt="#" class="col-1 small-icon">
+              <img src="images/icons/trash.svg" alt="#" class="col-1 small-icon">
+            </li>
+          </ul>
+          <div class="col-12 links--button-wrapper">
+            <button type="button" class="links-button">+ add new</button>
+          </div>
+        </div>
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="js/script.js" type="module"></script>
+  </body>
+</html>
